@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: deeppink;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: rgb(247, 18, 216);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav{
+            float: none;
+            width: 49%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: rgb(233, 45, 177);
+            padding: 20px;
+        }
+        article {
+            float: right;
+            padding: 20px;
+            width: 49%;
+            background-color: #e237a9;
+            height: 300px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>Pasteleria Rose</header>
+    <section>
+            <nav>
+                <table>
+                    <tr>
+                        <th>Pastel</th>
+                        <th></th>
+                        <th>Precio</th>
+                    </tr>
+                    <tr>
+                        <td>Chocolate</td>
+                        <td>......</td>
+                        <td>$180</td>
+                    </tr>
+                    <tr>
+                        <td>Fresa</td>
+                        <td>......</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <td>Nuez</td>
+                        <td>......</td>
+                        <td>$220</td>
+                    </tr>
+                    <tr>
+                        <td>Vainilla</td>
+                        <td>......</td>
+                        <td>$200</td>
+                    </tr>
+                </table>
+            </nav>
+            <article>
+                <table>
+                    <tr>
+                        <th>Adornos</th>
+                        <th></th>
+                        <th>Precio</th>
+                    </tr>
+                    <tr>
+                        <td>Flores de chantilli</td>
+                        <td>......</td>
+                        <td>$40</td>
+                    </tr>
+                    <tr>
+                        <td>Flores de chocolate</td>
+                        <td>......</td>
+                        <td>$50</td>
+                    </tr>
+                    <tr>
+                        <td>Tabletas de chocolate</td>
+                        <td>......</td>
+                        <td>$60</td>
+                    </tr>
+                    <tr>
+                        <td>Vela magica</td>
+                        <td>......</td>
+                        <td>$40</td>
+                    </tr>
+                </table>
+
+            <article>
+    </section>
+
+
+    <h2>¡Haz tu pedido!</h2>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" form="form1"><br><br>
+    <label for="telefono">Telefono:</label>
+    <input type="tel" id="telefono" name="telefono" form="form1"><br><br>
+    <label for="correo">Correo electronico:</label>
+    <input type="email" id="correo" name="correo" form="form1"><br><br>
+    <label for="descripcion">Descripción:</label>
+    <input type="text" id="descripcion" name="descripcion" form="form1"><br>
+
+    <p>Selecciona los sabores de tu pastel</p>
+    <input type="checkbox" id="topping1" name="topping1" value="Chocolate">
+    <label for="topping1">Pastel de chocolate</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="Fresa">
+    <label for="topping2">Pastel de Fresa</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="Nuez">
+    <label for="topping3">Pastel de Nuez</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="Vainilla">
+    <label for="topping3">Pastel de Vainilla</label><br>
+    <p>Selecciona los adornos de tu pastel</p>
+    <input type="checkbox" id="topping1" name="topping1" value="Flores de chantilli">
+    <label for="topping1">Pastel de chocolate</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="Flores de chocolate">
+    <label for="topping2">Pastel de Fresa</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="Tabletas de chocolate">
+    <label for="topping3">Pastel de Nuez</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="Vela magica">
+    <label for="topping3">Pastel de Vainilla</label><br><br>
+    <form action="/accion.js" id="form1" method="post">
+        <input type="submit" value="Ordenar">
+        <input type="reset" value="Limpiar">
+    </form>
+</body>
+
+</html>
